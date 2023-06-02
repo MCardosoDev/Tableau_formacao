@@ -1,0 +1,656 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column alias='Region Resolvida' caption='Nome da Coluna' datatype='integer' name='[Parâmetro 1]' param-domain-type='list' role='measure' type='quantitative' value='8'>
+        <calculation class='tableau' formula='8' />
+        <aliases>
+          <alias key='1' value='Country' />
+          <alias key='2' value='Region' />
+          <alias key='3' value='Economy' />
+          <alias key='4' value='Family' />
+          <alias key='5' value='Freedom' />
+          <alias key='6' value='Happiness Rank' />
+          <alias key='7' value='Happiness Score' />
+          <alias key='8' value='Region Resolvida' />
+        </aliases>
+        <members>
+          <member alias='Country' value='1' />
+          <member alias='Region' value='2' />
+          <member alias='Economy' value='3' />
+          <member alias='Family' value='4' />
+          <member alias='Freedom' value='5' />
+          <member alias='Happiness Rank' value='6' />
+          <member alias='Happiness Score' value='7' />
+          <member alias='Region Resolvida' value='8' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='Happiness Report_Migrated Data' inline='true' name='federated.0m00sx80tstnv31awwugy0htkknv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Happiness Report_Migrated Data' name='textscan.02f84fz1rqyh5z12xib570hu4d24'>
+            <connection class='textscan' directory='C:/DS/Tableau' filename='Happiness Report_Migrated Data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.02f84fz1rqyh5z12xib570hu4d24' name='Happiness Report_Migrated Data.csv' table='[Happiness Report_Migrated Data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=';'>
+            <column datatype='string' name='Backup' ordinal='0' />
+            <column datatype='string' name='Country' ordinal='1' />
+            <column datatype='string' name='Region' ordinal='2' />
+            <column datatype='real' name='Economy (GDP per Capita)' ordinal='3' />
+            <column datatype='real' name='Family' ordinal='4' />
+            <column datatype='real' name='Freedom' ordinal='5' />
+            <column datatype='integer' name='Happiness Rank' ordinal='6' />
+            <column datatype='real' name='Happiness Score' ordinal='7' />
+            <column datatype='real' name='Health (Life Expectancy)' ordinal='8' />
+            <column datatype='integer' name='Number of Records' ordinal='9' />
+            <column datatype='real' name='Standard Error' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.02f84fz1rqyh5z12xib570hu4d24' name='Happiness Report_Migrated Data.csv' table='[Happiness Report_Migrated Data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=';'>
+            <column datatype='string' name='Backup' ordinal='0' />
+            <column datatype='string' name='Country' ordinal='1' />
+            <column datatype='string' name='Region' ordinal='2' />
+            <column datatype='real' name='Economy (GDP per Capita)' ordinal='3' />
+            <column datatype='real' name='Family' ordinal='4' />
+            <column datatype='real' name='Freedom' ordinal='5' />
+            <column datatype='integer' name='Happiness Rank' ordinal='6' />
+            <column datatype='real' name='Happiness Score' ordinal='7' />
+            <column datatype='real' name='Health (Life Expectancy)' ordinal='8' />
+            <column datatype='integer' name='Number of Records' ordinal='9' />
+            <column datatype='real' name='Standard Error' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Happiness Report_Migrated Data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;R$&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Backup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Backup]</local-name>
+            <parent-name>[Happiness Report_Migrated Data.csv]</parent-name>
+            <remote-alias>Backup</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Happiness Report_Migrated Data.csv_6E597FC0AE474B92A2BE81DC3DD07D76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Happiness Report_Migrated Data.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Happiness Report_Migrated Data.csv_6E597FC0AE474B92A2BE81DC3DD07D76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Happiness Report_Migrated Data.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Happiness Report_Migrated Data.csv_6E597FC0AE474B92A2BE81DC3DD07D76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Economy (GDP per Capita)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Economy (GDP per Capita)]</local-name>
+            <parent-name>[Happiness Report_Migrated Data.csv]</parent-name>
+            <remote-alias>Economy (GDP per Capita)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Happiness Report_Migrated Data.csv_6E597FC0AE474B92A2BE81DC3DD07D76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Family</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Family]</local-name>
+            <parent-name>[Happiness Report_Migrated Data.csv]</parent-name>
+            <remote-alias>Family</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Happiness Report_Migrated Data.csv_6E597FC0AE474B92A2BE81DC3DD07D76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Freedom</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Freedom]</local-name>
+            <parent-name>[Happiness Report_Migrated Data.csv]</parent-name>
+            <remote-alias>Freedom</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Happiness Report_Migrated Data.csv_6E597FC0AE474B92A2BE81DC3DD07D76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Happiness Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Happiness Rank]</local-name>
+            <parent-name>[Happiness Report_Migrated Data.csv]</parent-name>
+            <remote-alias>Happiness Rank</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Happiness Report_Migrated Data.csv_6E597FC0AE474B92A2BE81DC3DD07D76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Happiness Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Happiness Score]</local-name>
+            <parent-name>[Happiness Report_Migrated Data.csv]</parent-name>
+            <remote-alias>Happiness Score</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Happiness Report_Migrated Data.csv_6E597FC0AE474B92A2BE81DC3DD07D76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Health (Life Expectancy)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Health (Life Expectancy)]</local-name>
+            <parent-name>[Happiness Report_Migrated Data.csv]</parent-name>
+            <remote-alias>Health (Life Expectancy)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Happiness Report_Migrated Data.csv_6E597FC0AE474B92A2BE81DC3DD07D76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Records]</local-name>
+            <parent-name>[Happiness Report_Migrated Data.csv]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Happiness Report_Migrated Data.csv_6E597FC0AE474B92A2BE81DC3DD07D76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Standard Error</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Standard Error]</local-name>
+            <parent-name>[Happiness Report_Migrated Data.csv]</parent-name>
+            <remote-alias>Standard Error</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Happiness Report_Migrated Data.csv_6E597FC0AE474B92A2BE81DC3DD07D76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Resultado da Análise da Coluna' datatype='string' name='[Calculation_106397568752971776]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CASE [Parameters].[Parâmetro 1]&#13;&#10;WHEN 1 THEN IF ISNULL([Country]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 2 THEN IF ISNULL([Region]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 3 THEN IF ISNULL([Economy (GDP per Capita)]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 4 THEN IF ISNULL([Family]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 5 THEN IF ISNULL([Freedom]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 6 THEN IF ISNULL([Happiness Rank]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 7 THEN IF ISNULL([Happiness Score]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 8 THEN IF ISNULL([Calculation_106397568759144450]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;END' />
+      </column>
+      <column caption='Percentual de Nulos' datatype='real' default-format='p0.00%' name='[Calculation_106397568754798593]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Number of Records])/TOTAL(SUM([Number of Records]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Region Resolvida' datatype='string' name='[Calculation_106397568759144450]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CASE [Country]&#13;&#10;WHEN &apos;Afghanistan&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Albania&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Algeria&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Angola&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Argentina&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Armenia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Australia&apos; THEN &apos;Australia and New Zealand&apos;&#13;&#10;WHEN &apos;Austria&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Azerbaijan&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Bahrain&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Bangladesh&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Belarus&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Belgium&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Belize&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Benin&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Bhutan&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Bolivia&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Bosnia and Herzegovina&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Botswana&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Brazil&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Bulgaria&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Burkina Faso&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Burundi&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Cambodia&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Cameroon&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Canada&apos; THEN &apos;North America&apos;&#13;&#10;WHEN &apos;Central African Republic&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Chad&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Chile&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;China&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Colombia&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Comoros&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Congo (Brazzaville)&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Congo (Kinshasa)&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Costa Rica&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Croatia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Cyprus&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Czech Republic&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Denmark&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Djibouti&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Dominican Republic&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Ecuador&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Egypt&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;El Salvador&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Estonia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Ethiopia&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Finland&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;France&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Gabon&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Georgia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Germany&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Ghana&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Greece&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Guatemala&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Guinea&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Haiti&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Honduras&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Hong Kong&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Hong Kong S.A.R., China&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Hungary&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Iceland&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;India&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Indonesia&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Iran&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Iraq&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Ireland&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Israel&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Italy&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Ivory Coast&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Jamaica&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Japan&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Jordan&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Kazakhstan&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Kenya&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Kosovo&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Kuwait&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Kyrgyzstan&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Laos&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Latvia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Lebanon&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Lesotho&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Liberia&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Libya&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Lithuania&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Luxembourg&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Macedonia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Madagascar&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Malawi&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Malaysia&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Mali&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Malta&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Mauritania&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Mauritius&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Mexico&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Moldova&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Mongolia&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Montenegro&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Morocco&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Mozambique&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Myanmar&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Namibia&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Nepal&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Netherlands&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;New Zealand&apos; THEN &apos;Australia and New Zealand&apos;&#13;&#10;WHEN &apos;Nicaragua&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Niger&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Nigeria&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;North Cyprus&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Norway&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Oman&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Pakistan&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Palestinian Territories&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Panama&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Paraguay&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Peru&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Philippines&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Poland&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Portugal&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Puerto Rico&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Qatar&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Romania&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Russia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Rwanda&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Saudi Arabia&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Senegal&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Serbia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Sierra Leone&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Somaliland Region&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Somaliland region&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Singapore&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Slovakia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Slovenia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Somalia&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;South Africa&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;South Korea&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;South Sudan&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Spain&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Sri Lanka&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Sudan&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Suriname&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Swaziland&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Sweden&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Switzerland&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Syria&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Taiwan&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Taiwan Province of China&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Tajikistan&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Tanzania&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Thailand&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Togo&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Trinidad and Tobago&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Tunisia&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Turkey&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Turkmenistan&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Uganda&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Ukraine&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;United Arab Emirates&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;United Kingdom&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;United States&apos; THEN &apos;North America&apos;&#13;&#10;WHEN &apos;Uruguay&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Uzbekistan&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Venezuela&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Vietnam&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Yemen&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Zambia&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Zimbabwe&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;END' />
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Happiness Report_Migrated Data.csv' datatype='table' name='[__tableau_internal_object_id__].[Happiness Report_Migrated Data.csv_6E597FC0AE474B92A2BE81DC3DD07D76]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_106397568752971776]' derivation='None' name='[none:Calculation_106397568752971776:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_106397568752971776:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;LINHA COM VALORES&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;LINHA SEM VALORES&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brasil&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column alias='Region Resolvida' caption='Nome da Coluna' datatype='integer' name='[Parâmetro 1]' param-domain-type='list' role='measure' type='quantitative' value='8'>
+          <calculation class='tableau' formula='8' />
+          <aliases>
+            <alias key='1' value='Country' />
+            <alias key='2' value='Region' />
+            <alias key='3' value='Economy' />
+            <alias key='4' value='Family' />
+            <alias key='5' value='Freedom' />
+            <alias key='6' value='Happiness Rank' />
+            <alias key='7' value='Happiness Score' />
+            <alias key='8' value='Region Resolvida' />
+          </aliases>
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Happiness Report_Migrated Data.csv' id='Happiness Report_Migrated Data.csv_6E597FC0AE474B92A2BE81DC3DD07D76'>
+            <properties context=''>
+              <relation connection='textscan.02f84fz1rqyh5z12xib570hu4d24' name='Happiness Report_Migrated Data.csv' table='[Happiness Report_Migrated Data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=';'>
+                  <column datatype='string' name='Backup' ordinal='0' />
+                  <column datatype='string' name='Country' ordinal='1' />
+                  <column datatype='string' name='Region' ordinal='2' />
+                  <column datatype='real' name='Economy (GDP per Capita)' ordinal='3' />
+                  <column datatype='real' name='Family' ordinal='4' />
+                  <column datatype='real' name='Freedom' ordinal='5' />
+                  <column datatype='integer' name='Happiness Rank' ordinal='6' />
+                  <column datatype='real' name='Happiness Score' ordinal='7' />
+                  <column datatype='real' name='Health (Life Expectancy)' ordinal='8' />
+                  <column datatype='integer' name='Number of Records' ordinal='9' />
+                  <column datatype='real' name='Standard Error' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Planilha 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Happiness Report_Migrated Data' name='federated.0m00sx80tstnv31awwugy0htkknv' />
+            <datasource caption='Parâmetros' name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column alias='Region Resolvida' caption='Nome da Coluna' datatype='integer' name='[Parâmetro 1]' param-domain-type='list' role='measure' type='quantitative' value='8'>
+              <calculation class='tableau' formula='8' />
+              <aliases>
+                <alias key='1' value='Country' />
+                <alias key='2' value='Region' />
+                <alias key='3' value='Economy' />
+                <alias key='4' value='Family' />
+                <alias key='5' value='Freedom' />
+                <alias key='6' value='Happiness Rank' />
+                <alias key='7' value='Happiness Score' />
+                <alias key='8' value='Region Resolvida' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0m00sx80tstnv31awwugy0htkknv'>
+            <column caption='Resultado da Análise da Coluna' datatype='string' name='[Calculation_106397568752971776]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parâmetro 1]&#13;&#10;WHEN 1 THEN IF ISNULL([Country]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 2 THEN IF ISNULL([Region]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 3 THEN IF ISNULL([Economy (GDP per Capita)]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 4 THEN IF ISNULL([Family]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 5 THEN IF ISNULL([Freedom]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 6 THEN IF ISNULL([Happiness Rank]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 7 THEN IF ISNULL([Happiness Score]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 8 THEN IF ISNULL([Calculation_106397568759144450]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;END' />
+            </column>
+            <column caption='Percentual de Nulos' datatype='real' default-format='p0.00%' name='[Calculation_106397568754798593]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Number of Records])/TOTAL(SUM([Number of Records]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Region Resolvida' datatype='string' name='[Calculation_106397568759144450]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Country]&#13;&#10;WHEN &apos;Afghanistan&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Albania&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Algeria&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Angola&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Argentina&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Armenia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Australia&apos; THEN &apos;Australia and New Zealand&apos;&#13;&#10;WHEN &apos;Austria&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Azerbaijan&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Bahrain&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Bangladesh&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Belarus&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Belgium&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Belize&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Benin&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Bhutan&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Bolivia&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Bosnia and Herzegovina&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Botswana&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Brazil&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Bulgaria&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Burkina Faso&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Burundi&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Cambodia&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Cameroon&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Canada&apos; THEN &apos;North America&apos;&#13;&#10;WHEN &apos;Central African Republic&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Chad&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Chile&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;China&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Colombia&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Comoros&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Congo (Brazzaville)&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Congo (Kinshasa)&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Costa Rica&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Croatia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Cyprus&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Czech Republic&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Denmark&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Djibouti&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Dominican Republic&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Ecuador&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Egypt&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;El Salvador&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Estonia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Ethiopia&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Finland&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;France&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Gabon&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Georgia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Germany&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Ghana&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Greece&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Guatemala&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Guinea&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Haiti&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Honduras&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Hong Kong&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Hong Kong S.A.R., China&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Hungary&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Iceland&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;India&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Indonesia&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Iran&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Iraq&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Ireland&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Israel&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Italy&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Ivory Coast&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Jamaica&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Japan&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Jordan&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Kazakhstan&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Kenya&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Kosovo&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Kuwait&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Kyrgyzstan&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Laos&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Latvia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Lebanon&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Lesotho&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Liberia&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Libya&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Lithuania&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Luxembourg&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Macedonia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Madagascar&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Malawi&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Malaysia&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Mali&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Malta&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Mauritania&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Mauritius&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Mexico&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Moldova&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Mongolia&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Montenegro&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Morocco&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Mozambique&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Myanmar&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Namibia&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Nepal&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Netherlands&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;New Zealand&apos; THEN &apos;Australia and New Zealand&apos;&#13;&#10;WHEN &apos;Nicaragua&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Niger&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Nigeria&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;North Cyprus&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Norway&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Oman&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Pakistan&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Palestinian Territories&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Panama&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Paraguay&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Peru&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Philippines&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Poland&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Portugal&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Puerto Rico&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Qatar&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Romania&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Russia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Rwanda&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Saudi Arabia&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Senegal&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Serbia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Sierra Leone&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Somaliland Region&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Somaliland region&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Singapore&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Slovakia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Slovenia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Somalia&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;South Africa&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;South Korea&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;South Sudan&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Spain&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Sri Lanka&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Sudan&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Suriname&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Swaziland&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Sweden&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Switzerland&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Syria&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Taiwan&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Taiwan Province of China&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Tajikistan&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Tanzania&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Thailand&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Togo&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Trinidad and Tobago&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Tunisia&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Turkey&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Turkmenistan&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Uganda&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Ukraine&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;United Arab Emirates&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;United Kingdom&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;United States&apos; THEN &apos;North America&apos;&#13;&#10;WHEN &apos;Uruguay&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Uzbekistan&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Venezuela&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Vietnam&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Yemen&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Zambia&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Zimbabwe&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Economy (GDP per Capita)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Family]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Freedom]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Happiness Rank]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Happiness Score]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_106397568752971776]' derivation='None' name='[none:Calculation_106397568752971776:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_106397568754798593]' derivation='User' name='[usr:Calculation_106397568754798593:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0m00sx80tstnv31awwugy0htkknv].[none:Calculation_106397568752971776:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0m00sx80tstnv31awwugy0htkknv].[none:Calculation_106397568752971776:nk]</rows>
+        <cols>[federated.0m00sx80tstnv31awwugy0htkknv].[usr:Calculation_106397568754798593:qk:2]</cols>
+      </table>
+      <simple-id uuid='{97B96B0D-77C4-46F9-A419-3A3F844098F3}' />
+    </worksheet>
+    <worksheet name='Planilha 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Happiness Report_Migrated Data' name='federated.0m00sx80tstnv31awwugy0htkknv' />
+            <datasource caption='Parâmetros' name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column alias='Region Resolvida' caption='Nome da Coluna' datatype='integer' name='[Parâmetro 1]' param-domain-type='list' role='measure' type='quantitative' value='8'>
+              <calculation class='tableau' formula='8' />
+              <aliases>
+                <alias key='1' value='Country' />
+                <alias key='2' value='Region' />
+                <alias key='3' value='Economy' />
+                <alias key='4' value='Family' />
+                <alias key='5' value='Freedom' />
+                <alias key='6' value='Happiness Rank' />
+                <alias key='7' value='Happiness Score' />
+                <alias key='8' value='Region Resolvida' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0m00sx80tstnv31awwugy0htkknv'>
+            <column caption='Resultado da Análise da Coluna' datatype='string' name='[Calculation_106397568752971776]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parâmetro 1]&#13;&#10;WHEN 1 THEN IF ISNULL([Country]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 2 THEN IF ISNULL([Region]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 3 THEN IF ISNULL([Economy (GDP per Capita)]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 4 THEN IF ISNULL([Family]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 5 THEN IF ISNULL([Freedom]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 6 THEN IF ISNULL([Happiness Rank]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 7 THEN IF ISNULL([Happiness Score]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;WHEN 8 THEN IF ISNULL([Calculation_106397568759144450]) THEN &apos;LINHA SEM VALORES&apos; ELSE &apos;LINHA COM VALORES&apos; END&#13;&#10;END' />
+            </column>
+            <column caption='Percentual de Nulos' datatype='real' default-format='p0.00%' name='[Calculation_106397568754798593]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Number of Records])/TOTAL(SUM([Number of Records]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Region Resolvida' datatype='string' name='[Calculation_106397568759144450]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Country]&#13;&#10;WHEN &apos;Afghanistan&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Albania&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Algeria&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Angola&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Argentina&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Armenia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Australia&apos; THEN &apos;Australia and New Zealand&apos;&#13;&#10;WHEN &apos;Austria&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Azerbaijan&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Bahrain&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Bangladesh&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Belarus&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Belgium&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Belize&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Benin&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Bhutan&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Bolivia&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Bosnia and Herzegovina&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Botswana&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Brazil&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Bulgaria&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Burkina Faso&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Burundi&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Cambodia&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Cameroon&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Canada&apos; THEN &apos;North America&apos;&#13;&#10;WHEN &apos;Central African Republic&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Chad&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Chile&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;China&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Colombia&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Comoros&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Congo (Brazzaville)&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Congo (Kinshasa)&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Costa Rica&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Croatia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Cyprus&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Czech Republic&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Denmark&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Djibouti&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Dominican Republic&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Ecuador&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Egypt&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;El Salvador&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Estonia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Ethiopia&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Finland&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;France&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Gabon&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Georgia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Germany&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Ghana&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Greece&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Guatemala&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Guinea&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Haiti&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Honduras&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Hong Kong&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Hong Kong S.A.R., China&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Hungary&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Iceland&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;India&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Indonesia&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Iran&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Iraq&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Ireland&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Israel&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Italy&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Ivory Coast&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Jamaica&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Japan&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Jordan&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Kazakhstan&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Kenya&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Kosovo&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Kuwait&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Kyrgyzstan&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Laos&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Latvia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Lebanon&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Lesotho&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Liberia&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Libya&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Lithuania&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Luxembourg&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Macedonia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Madagascar&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Malawi&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Malaysia&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Mali&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Malta&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Mauritania&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Mauritius&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Mexico&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Moldova&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Mongolia&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Montenegro&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Morocco&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Mozambique&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Myanmar&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Namibia&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Nepal&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Netherlands&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;New Zealand&apos; THEN &apos;Australia and New Zealand&apos;&#13;&#10;WHEN &apos;Nicaragua&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Niger&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Nigeria&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;North Cyprus&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Norway&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Oman&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Pakistan&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Palestinian Territories&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Panama&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Paraguay&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Peru&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Philippines&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Poland&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Portugal&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Puerto Rico&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Qatar&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Romania&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Russia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Rwanda&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Saudi Arabia&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Senegal&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Serbia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Sierra Leone&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Somaliland Region&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Somaliland region&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Singapore&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Slovakia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Slovenia&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Somalia&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;South Africa&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;South Korea&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;South Sudan&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Spain&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Sri Lanka&apos; THEN &apos;Southern Asia&apos;&#13;&#10;WHEN &apos;Sudan&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Suriname&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Swaziland&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Sweden&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Switzerland&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;Syria&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Taiwan&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Taiwan Province of China&apos; THEN &apos;Eastern Asia&apos;&#13;&#10;WHEN &apos;Tajikistan&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Tanzania&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Thailand&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Togo&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Trinidad and Tobago&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Tunisia&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Turkey&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Turkmenistan&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Uganda&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Ukraine&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;United Arab Emirates&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;United Kingdom&apos; THEN &apos;Western Europe&apos;&#13;&#10;WHEN &apos;United States&apos; THEN &apos;North America&apos;&#13;&#10;WHEN &apos;Uruguay&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Uzbekistan&apos; THEN &apos;Central and Eastern Europe&apos;&#13;&#10;WHEN &apos;Venezuela&apos; THEN &apos;Latin America and Caribbean&apos;&#13;&#10;WHEN &apos;Vietnam&apos; THEN &apos;Southeastern Asia&apos;&#13;&#10;WHEN &apos;Yemen&apos; THEN &apos;Middle East and Northern Africa&apos;&#13;&#10;WHEN &apos;Zambia&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;WHEN &apos;Zimbabwe&apos; THEN &apos;Sub-Saharan Africa&apos;&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Economy (GDP per Capita)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Family]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Freedom]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Happiness Rank]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Happiness Score]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_106397568752971776]' derivation='None' name='[none:Calculation_106397568752971776:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_106397568754798593]' derivation='User' name='[usr:Calculation_106397568754798593:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0m00sx80tstnv31awwugy0htkknv].[none:Calculation_106397568752971776:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0m00sx80tstnv31awwugy0htkknv].[none:Calculation_106397568752971776:nk]</rows>
+        <cols>[federated.0m00sx80tstnv31awwugy0htkknv].[usr:Calculation_106397568754798593:qk:2]</cols>
+      </table>
+      <simple-id uuid='{FC830CB4-B8F1-40EC-A189-2D58E9C30CB6}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Planilha 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='compact' param='[Parameters].[Parâmetro 1]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.0m00sx80tstnv31awwugy0htkknv].[none:Calculation_106397568752971776:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0m00sx80tstnv31awwugy0htkknv].[none:Calculation_106397568752971776:nk]</field>
+            <field>[federated.0m00sx80tstnv31awwugy0htkknv].[none:Country:nk]</field>
+            <field>[federated.0m00sx80tstnv31awwugy0htkknv].[none:Region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8E735F7A-180F-486F-819B-4DE5D4966E2E}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Planilha 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card mode='compact' param='[Parameters].[Parâmetro 1]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.0m00sx80tstnv31awwugy0htkknv].[none:Calculation_106397568752971776:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0m00sx80tstnv31awwugy0htkknv].[none:Calculation_106397568752971776:nk]</field>
+            <field>[federated.0m00sx80tstnv31awwugy0htkknv].[none:Calculation_106397568759144450:nk]</field>
+            <field>[federated.0m00sx80tstnv31awwugy0htkknv].[none:Country:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8FDAC633-F3EB-4055-9442-0CD6348F45C7}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='119' name='Planilha 1' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+    <thumbnail height='99' name='Planilha 2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
